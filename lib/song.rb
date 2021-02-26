@@ -14,5 +14,7 @@ class Song
   def artist_name
     return nil unless self.artist
     self.artist.name
+    
+    self.artist&.name
   end
 end 
